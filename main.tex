@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+  {\Huge \scshape \textbf{Hari Om}} \\[6pt]
+  \small Email: \href{mailto:hariom24568@gmail.com}{\underline{hariom24568@gmail.com}}
+  \quad\textbar\quad Phone: +917739508977 \\[4pt]
+  \small LinkedIn: \href{https://linkedin.com/in/hariom09090}{\underline{linkedin.com/in/hariom09090}}
+  \quad\textbar\quad
+  Medium: \href{https://medium.com/@hariom09090}{\underline{medium.com/@hariom09090}}
+  \quad\textbar\quad
+  \small Location: Bokaro, Jharkhand
+\end{center}
+\vspace{-8pt}
+
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Strategy-driven \textbf{Senior DevOps Engineer} specializing in \textbf{Serverless Architecture}, \textbf{Agentic AI Pipeline}, \textbf{Multi-Tenant SaaS}. Lead \textbf{AWS partnership growth}, \textbf{AI-Driven Product development}, and \textbf{Technical Architecture}.}
+\vspace{-2pt}
+
+ %-----------TECHNICAL SKILLS-----------
+ \section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cloud Platform \& Architecture}{: AWS, Serverless and Microservices Architecture, Multi-Tenant Architecture, Control Tower, Account Factory for Terraform, SaaS, PaaS, IaaS} \\
+     \textbf{CI/CD \& Automation}{: Terraform, Pulumi, CloudFormation, GitHub Actions, GitLab, CodePipeline, Jenkins, ArgoCD, n8n} \\
+     \textbf{AI \& Agentic Tooling}{: Amazon Bedrock, Bedrock Guardrails, AWS Strands Agents SDK, Bedrock AgentCore Runtime, MCP, Q CLI} \\
+     \textbf{Orchestration \& Containers}{: Kubernetes, Amazon EKS, Docker, AWS ECS Fargate, Step Functions, Lambda} \\
+     \textbf{Observability \& Monitoring}{: Prometheus, Grafana, CloudWatch, OpenSearch} \\
+     \textbf{Programming}{: Python, Bash/Shell, JavaScript, Node.js, Next.js, HCL, YAML, JSON, C++, C} \\
+     \textbf{Databases}{: Aurora PostgreSQL, pgvector, DynamoDB, RDS Proxy, MySQL} \\
+     \textbf{Tools \& Methods}{: AWS SAM, AWS SaaS Builder Toolkit, IAM Identity Center, SSO, Postman, Swagger, REST \& WebSocket APIs, Git, Jira, Confluence, Linux, DNS Management}
+    }}
+ \end{itemize}
+ \vspace{-8pt}
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Klypup}{Oct 2025 -- Present}
+      {Senior DevOps Engineer}{Noida}
+      \resumeItemListStart
+        \resumeItem{Drove organization to \textbf{AWS Select Tier Partner} through \textbf{technical competency alignment}, \textbf{ACE pipeline}, \textbf{FTR-readiness}, and Customer Success documentation.}
+        \resumeItem{Served as \textbf{primary technical design authority} across multiple AWS engagements, owning \textbf{HLD} and \textbf{LLD} spanning \textit{AI, Data, Compute, Networking, and Security} layers.}
+        \resumeItem{Architected multiple \textbf{Agentic AI Pipelines} using \textbf{AWS Strands Agents SDK}, \textbf{Bedrock AgentCore Runtime}, and \textbf{CodeBuild}, enabling \textit{dynamic tool use}, \textit{inter-agent orchestration}, \textbf{Generative AI} workflow execution, opening a new competency stream for the organization.}
+        \resumeItem{Architected \textbf{Multi-Tenant SaaS platform} using \textbf{AWS SaaS Builder Toolkit}, implementing \textit{tenant isolation}, \textit{onboarding automation}, \textit{tiered billing}, and control / application plane separation.}
+        \resumeItem{Designed \textbf{zero-backend-auth architecture} using CloudFront \textrightarrow\ ALB \textrightarrow\ ECS, offloading all authentication to the \textbf{ALB} via \textbf{Cognito} with \textit{HttpOnly cookie propagation}, eliminating auth logic from backend services.}
+        \resumeItem{Led \textbf{AWS Control Tower} implementation across the organization, establishing \textbf{multi-account landing zone} and automating account provisioning via \textbf{Account Factory for Terraform}.}
+        \resumeItem{Replaced \textbf{OpenSearch} with \textbf{pgvector RAG} on \textbf{Aurora PostgreSQL}, consolidating vector infrastructure and reducing vector storage costs by \textbf{60\%} with no degradation in search performance.}
+      \resumeItemListEnd
+    
+
+    \resumeSubheading
+      {Workmates Core2Cloud Solutions Ltd.}{Jan 2024 -- Oct 2025}
+      {Cloud Engineer -- DevOps}{Kolkata}
+      \resumeItemListStart
+        \resumeItem{Led an \textbf{AI-Driven Serverless DevOps Team} in architecting and deploying an \textit{event-driven microservices architecture}, resulting in a \textbf{70\% improvement in scalability}, improved \textbf{system resilience}, faster \textbf{response times}, and reduced \textbf{operational overhead} across \textbf{AWS Customer workloads}.}
+        \resumeItem{Architected an enterprise-grade \textbf{Multi-Tenant SaaS platform} on \textbf{AWS} serving \textbf{200+ tenants}, leveraging Lambda, API Gateway, Cognito, Aurora with RDS Proxy, AppSync, OpenSearch, CloudFront, and S3. Enforced strict tenant isolation with JWT, custom Lambda authorizers, and dynamic IAM permissions.}
+        \resumeItem{Built a \textbf{Centralized Terraform GitHub Actions Workflow} to manage infrastructure across \textbf{10+ AWS accounts}, enabling \textbf{one-click multi environment provisioning} and dynamic tfvars management through GitOps-driven CI/CD automation.}
+        \resumeItem{Designed \textbf{n8n alert workflows} using Amazon Bedrock to auto-recommend fixes, improving response time by 40\%.}
+        \resumeItem{Achieved \textbf{30\% cost reduction} across \textbf{4,500+ Lambda functions} by applying \textbf{FinOps practices}, right-sizing resources, migrating to a modular SAM architecture with ARM64, and leveraging CloudWatch Insights.}
+        \resumeItem{Built over \textbf{1,000+ CI/CD pipelines} with AWS CloudFormation, custom CodeBuild containers, GitHub Actions, incorporating \textit{codepipeline github status notifications} with manual approval-based.}
+        \resumeItem{Reduced Lambda cold-start latency from \textbf{10seconds} to \textbf{milliseconds} by implementing \textbf{AWS SnapStart} and optimizing initialization, with results \textbf{published on company website}.}
+        \resumeItem{Architected and built \textbf{in-house application} leveraging Lambda, SSM, SES, and Zoho for real-time ticket alert handling across all customer accounts via AWS SSO.}
+        \resumeItem{Setted up CDN functions for secure content caching, reducing Total Blocking Time to under 30ms.}
+        \resumeItem{Designed modular serverless workflows using Step Functions, Cognito, and DynamoDB Streams to enhance maintainability and reduce latency.}
+        \resumeItem{Implemented IAM-based authentication with pool-based connection management for RDS Proxy and Aurora, enhancing database performance and security.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Workmates Core2Cloud Solutions Ltd.}{Feb 2023 -- Dec 2023}
+      {Associate Cloud Engineer}{Kolkata}
+      \resumeItemListStart
+        \resumeItem{Created  \textbf{dynamic CloudWatch dashboards} and implemented Lambda-based automated alerting for over \textbf{300+ customer accounts}.}
+        \resumeItem{Maintained Linux servers (\textbf{Nginx and Apache}) and CMS platforms, including LAMP/LEMP stacks.}
+        \resumeItem{Containerized applications with Docker and configured Auto Scaling Groups with scaling hooks using Python scripts for resource utilization.}
+        \resumeItem{Developed an SOW automation tool using Python and \textbf{Docassemble}, reducing manual document creation effort by \textbf{80\%} through efficient process automation.}
+        \resumeItem{Managed EC2 with custom AMIs deployment and AMI-creation automation; configured ALB with path-based routing; and hosted static websites using S3 and CloudFront with cache control.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kalinga Institute of Industrial Technology}{2019 -- 2023}
+      {B.Tech in Information Technology -- CGPA: 8.97/10}{Bhubaneswar}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework:} Data Structures and Algorithms, Cloud Computing, System Design, Operating Systems, Computer Networks}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------CERTIFICATIONS & AWARDS-----------
+\section{Certifications \& Awards}
+  \resumeItemListStart
+    \resumeItem{\textbf{AWS Certified Solutions Architect -- Associate}}
+    \resumeItem{\textbf{AWS Certified Cloud Practitioner}}
+    \resumeItem{\textbf{Innovator of the Year} at Workmates Core2Cloud}
+  \resumeItemListEnd
+\vspace{-4pt}
+
+%-----------INITIATIVES-----------
+\section{Initiatives}
+  \resumeItemListStart
+    \resumeItem{Represented organization at \textbf{AWS PartnerEquip 2025} among other AWS Partners.}
+    \resumeItem{Community Contributions: \textbf{Speaker at AWS User Group} on Cognito.}
+    \resumeItem{Led workshops on \textbf{Microservices in Serverless Architecture}, and \textbf{Lambda SnapStart}.}
+  \resumeItemListEnd
+
+\end{document}
